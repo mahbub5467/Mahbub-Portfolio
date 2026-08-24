@@ -249,18 +249,6 @@
 
             <div class="buttons">
 
-                <a href="#projects"
-                   class="btn light">
-
-                    Explore my work
-
-                    <span>
-                        ↗
-                    </span>
-
-                </a>
-
-
                 <a href="${pageContext.request.contextPath}/resources/files/Mahbub_Hasan_Akash_CV.pdf"
                    class="btn outline"
                    download>
@@ -1269,7 +1257,7 @@
             <div class="paper-content">
 
                 <small>
-                    BECITHCON 2026 · ACCEPTED
+                    BECITHCON 2026 ·
                 </small>
 
                 <h3>
@@ -1332,7 +1320,7 @@
                 </span>
 
                 <small>
-                    2025 · CONFERENCE PAPER
+                    ICCIT 2025 · CONFERENCE
                 </small>
 
                 <h3>
@@ -1366,7 +1354,14 @@
                     </span>
 
                 </div>
+                <a href="researchgate.net/publication/404608746_Underwater_Image_Reconstruction_Using_a_Swin_Transformer-Based_Generator_and_PatchGAN_Discriminator?_tp=eyJjb250ZXh0Ijp7InBhZ2UiOiJwcm9maWxlIiwicHJldmlvdXNQYWdlIjoicHVibGljYXRpb24iLCJwb3NpdGlvbiI6InBhZ2VDb250ZW50In19"
+                   target="_blank"
+                   rel="noopener noreferrer">
 
+                    ResearchGate
+                    ↗
+
+                </a>
             </article>
 
 
@@ -1410,7 +1405,14 @@
                     </span>
 
                 </div>
+                <a href="researchgate.net/publication/397909398_Robotics_artificial_intelligence_and_computer_vision_in_dental_implant_surgery_a_systematic_review_of_accuracy_efficiency_and_future_directions?_tp=eyJjb250ZXh0Ijp7InBhZ2UiOiJwcm9maWxlIiwicHJldmlvdXNQYWdlIjpudWxsLCJwb3NpdGlvbiI6InBhZ2VDb250ZW50In19"
+                   target="_blank"
+                   rel="noopener noreferrer">
 
+                    ResearchGate
+                    ↗
+
+                </a>
             </article>
 
 
@@ -1454,7 +1456,14 @@
                     </span>
 
                 </div>
+                <a href="https://www.researchgate.net/publication/404405112_A_novel_dataset_of_North-Eastern_Indian_coins_for_machine_learning-based_classification"
+                   target="_blank"
+                   rel="noopener noreferrer">
 
+                    ResearchGate
+                    ↗
+
+                </a>
             </article>
 
 
@@ -1504,6 +1513,9 @@
                     <span>C++</span>
                     <span>JavaScript</span>
                     <span>SQL</span>
+                    <span>CSS</span>
+                    <span>HTML</span>
+                    <span>JSP</span>
 
                 </div>
 
@@ -1544,6 +1556,9 @@
                     <span>Git</span>
                     <span>GitHub</span>
                     <span>MySQL</span>
+                    <span>SQL Server</span>
+                    <span>Microsoft SQL</span>
+                    <span>PostgreSQL</span>
                     <span>VS Code</span>
                     <span>Postman</span>
                     <span>Arduino IDE</span>
