@@ -4059,3 +4059,821 @@ footer {
     font-size: 12px;
     letter-spacing: 1px;
 }
+/* =========================================================
+   RESPONSIVE FIX — REPLACE OLD RESPONSIVE SECTION
+   ========================================================= */
+
+html,
+body {
+    width: 100%;
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+img,
+video,
+svg,
+canvas {
+    max-width: 100%;
+}
+
+
+/* =========================================================
+   LARGE DESKTOP
+   ========================================================= */
+
+@media (min-width: 1500px) {
+
+    .hero {
+        min-height: 850px;
+        padding-left: 70px;
+        padding-right: 70px;
+        gap: 100px;
+    }
+
+    .hero h1 {
+        font-size: 100px;
+    }
+
+    .portrait {
+        width: 520px;
+        height: 630px;
+    }
+
+    .photo-placeholder {
+        width: 290px;
+        height: 405px;
+        border-radius: 30px;
+    }
+}
+
+
+/* =========================================================
+   TABLET — 1200px
+   ========================================================= */
+
+@media (max-width: 1200px) {
+
+    .main-nav {
+        gap: 15px;
+    }
+
+    .hero {
+        width: 100%;
+        grid-template-columns:
+            minmax(0, 1fr)
+            minmax(330px, .72fr);
+
+        gap: 40px;
+        padding: 55px 35px 75px;
+    }
+
+    .hero h1 {
+        font-size: clamp(52px, 6vw, 78px);
+    }
+
+    .portrait {
+        width: min(430px, 100%);
+        height: 560px;
+    }
+
+    .photo-placeholder {
+        width: 245px;
+        height: 360px;
+        border-radius: 26px;
+    }
+
+    .projects-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .project-featured {
+        grid-column: span 2;
+    }
+
+    .cert-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .split {
+        gap: 50px;
+    }
+}
+
+
+/* =========================================================
+   TABLET — 950px
+   ========================================================= */
+
+@media (max-width: 950px) {
+
+    .brand-info small {
+        display: none;
+    }
+
+    .main-nav {
+        display: none;
+    }
+
+    .video-background {
+        filter:
+                brightness(.80)
+                contrast(1.06)
+                saturate(1.05);
+    }
+
+    .video-overlay {
+        background: rgba(0, 0, 0, .16);
+    }
+
+    .hero {
+        width: 100%;
+        grid-template-columns: 1fr;
+        min-height: auto;
+        padding: 80px 35px 100px;
+        gap: 50px;
+    }
+
+    .hero-bg-video {
+        width: 100%;
+        opacity: .62;
+
+        filter:
+                brightness(.82)
+                contrast(1.06)
+                saturate(1.08);
+    }
+
+    .hero-video-overlay {
+        background:
+                linear-gradient(
+                        90deg,
+                        rgba(4, 7, 12, .72),
+                        rgba(4, 7, 12, .42)
+                );
+    }
+
+    .hero-left {
+        width: 100%;
+        max-width: 850px;
+    }
+
+    /*
+       IMPORTANT:
+       Original CSS had display:none here.
+       That was causing desktop/tablet/mobile
+       layout mismatch.
+    */
+    .hero-right {
+        display: flex;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .portrait {
+        width: min(430px, 75vw);
+        height: 560px;
+    }
+
+    .split {
+        grid-template-columns: 1fr;
+        gap: 35px;
+    }
+
+    .experience-card {
+        grid-template-columns: 130px minmax(0, 1fr);
+    }
+
+    .architecture {
+        display: none;
+    }
+
+    .featured-paper {
+        grid-template-columns: 220px minmax(0, 1fr);
+    }
+
+    .paper-year {
+        display: none;
+    }
+}
+
+
+/* =========================================================
+   MOBILE — 700px
+   ========================================================= */
+
+@media (max-width: 700px) {
+
+    :root {
+        --mobile-padding: 18px;
+    }
+
+    html,
+    body {
+        width: 100%;
+        overflow-x: hidden;
+    }
+
+
+    /* ================= HEADER ================= */
+
+    .site-header {
+        width: 100%;
+        height: 65px;
+        padding: 0 var(--mobile-padding);
+    }
+
+    .brand {
+        min-width: 0;
+    }
+
+    .brand-mark {
+        width: 35px;
+        height: 35px;
+        flex-shrink: 0;
+    }
+
+    .brand-info {
+        min-width: 0;
+    }
+
+    .brand-info strong {
+        max-width: 140px;
+        font-size: 10px;
+
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+    }
+
+    .brand-info small {
+        display: none;
+    }
+
+    .main-nav {
+        display: none;
+    }
+
+    .terminal-btn {
+        flex-shrink: 0;
+        padding: 8px 11px;
+        font-size: 9px;
+    }
+
+
+    /* ================= HERO ================= */
+
+    .hero {
+        width: 100%;
+        min-height: auto;
+
+        display: grid;
+        grid-template-columns: 1fr;
+
+        padding:
+                65px
+                var(--mobile-padding)
+                80px;
+
+        gap: 45px;
+    }
+
+    .hero-left {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .hero h1 {
+        width: 100%;
+        max-width: 100%;
+
+        font-size:
+                clamp(
+                        42px,
+                        13vw,
+                        64px
+                );
+
+        line-height: .96;
+        letter-spacing: -2.8px;
+
+        overflow-wrap: anywhere;
+        word-break: normal;
+    }
+
+    .hero-description {
+        width: 100%;
+        max-width: 100%;
+
+        font-size: 13px;
+        line-height: 1.75;
+    }
+
+
+    /* ================= BUTTONS ================= */
+
+    .buttons {
+        width: 100%;
+
+        display: flex;
+        flex-direction: column;
+
+        align-items: stretch;
+        gap: 10px;
+    }
+
+    .btn {
+        width: 100%;
+        min-height: 50px;
+    }
+
+
+    /* ================= SOCIAL ================= */
+
+    .socials {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 8px;
+    }
+
+    .socials a {
+        min-width: 40px;
+        height: 40px;
+    }
+
+
+    /* ================= PROFILE ================= */
+
+    .hero-right {
+        width: 100%;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .portrait {
+        width: min(100%, 340px);
+        height: 430px;
+
+        border-radius: 20px;
+    }
+
+    .photo-placeholder {
+        width: min(205px, 62%);
+        height: 290px;
+
+        border-radius: 22px;
+    }
+
+    .profile-header {
+        top: 17px;
+        left: 18px;
+        right: 18px;
+
+        font-size: 7px;
+        letter-spacing: 1.4px;
+    }
+
+    .data-card {
+        min-width: 105px;
+        padding: 9px 10px;
+    }
+
+    .data-card small {
+        font-size: 6px;
+    }
+
+    .data-card strong {
+        font-size: 8px;
+    }
+
+    .data-one {
+        left: 12px;
+        top: 105px;
+    }
+
+    .data-two {
+        right: 12px;
+        top: 270px;
+    }
+
+    .corner {
+        width: 24px;
+        height: 24px;
+    }
+
+    .c-tl {
+        top: 78px;
+        left: 38px;
+    }
+
+    .c-tr {
+        top: 78px;
+        right: 38px;
+    }
+
+    .c-bl {
+        bottom: 72px;
+        left: 38px;
+    }
+
+    .c-br {
+        bottom: 72px;
+        right: 38px;
+    }
+
+
+    /* ================= SECTIONS ================= */
+
+    .journey,
+    .section {
+        width: 100%;
+
+        padding:
+                80px
+                var(--mobile-padding);
+    }
+
+    .journey-grid {
+        grid-template-columns: 1fr;
+        gap: 15px;
+    }
+
+    .section-head {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+
+        gap: 14px;
+    }
+
+    .section h2 {
+        font-size: clamp(36px, 10vw, 46px);
+        line-height: 1.02;
+        letter-spacing: -2px;
+    }
+
+
+    /* ================= EXPERIENCE ================= */
+
+    .experience-card {
+        grid-template-columns: 1fr;
+
+        padding: 25px;
+        gap: 22px;
+    }
+
+    .architecture {
+        display: none;
+    }
+
+
+    /* ================= PROJECTS ================= */
+
+    .projects-grid {
+        grid-template-columns: 1fr;
+        gap: 15px;
+    }
+
+    .project-featured {
+        grid-column: auto;
+    }
+
+    .project-art {
+        min-height: 200px;
+    }
+
+    .terminal-art {
+        width: 100%;
+        max-width: 100%;
+
+        overflow-x: auto;
+        overflow-y: hidden;
+    }
+
+
+    /* ================= PAPERS ================= */
+
+    .featured-paper {
+        grid-template-columns: 1fr;
+        gap: 18px;
+    }
+
+    .paper-visual {
+        width: 100%;
+        height: 210px;
+    }
+
+    .papers-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .paper-year {
+        display: none;
+    }
+
+
+    /* ================= SKILLS ================= */
+
+    .skills-layout {
+        grid-template-columns: 1fr;
+        gap: 15px;
+    }
+
+    .competencies {
+        grid-template-columns: 1fr;
+    }
+
+    .skill-panel {
+        padding: 22px;
+    }
+
+
+    /* ================= CERTIFICATES ================= */
+
+    .cert-grid {
+        grid-template-columns: 1fr;
+        gap: 15px;
+    }
+
+    .cert-card {
+        min-height: 215px;
+        padding: 22px;
+    }
+
+
+    /* ================= CONTACT ================= */
+
+    .contact {
+        width: 100%;
+        min-height: 550px;
+
+        padding:
+                70px
+                var(--mobile-padding);
+    }
+
+    .contact h2 {
+        font-size:
+                clamp(
+                        44px,
+                        13vw,
+                        68px
+                );
+
+        line-height: .94;
+        letter-spacing: -3px;
+    }
+
+    .contact p {
+        max-width: 100%;
+        font-size: 12px;
+        line-height: 1.7;
+    }
+
+
+    /* ================= FOOTER ================= */
+
+    footer {
+        width: 100%;
+
+        padding:
+                25px
+                var(--mobile-padding)
+                35px;
+
+        display: flex;
+        flex-direction: column;
+
+        align-items: flex-start;
+        gap: 10px;
+    }
+
+
+    /* ================= CERTIFICATE MODAL ================= */
+
+    .certificate-modal {
+        padding: 10px;
+    }
+
+    .certificate-window {
+        width: 100%;
+        max-width: 100%;
+        max-height: 95vh;
+
+        border-radius: 14px;
+    }
+
+    .certificate-header {
+        min-height: 65px;
+
+        padding:
+                14px
+                55px
+                14px
+                16px;
+    }
+
+    .certificate-header h3 {
+        font-size: 15px;
+    }
+
+    .certificate-status {
+        display: none;
+    }
+
+    .certificate-close {
+        top: 13px;
+        right: 13px;
+
+        width: 34px;
+        height: 34px;
+    }
+
+    .certificate-image-container {
+        padding: 12px;
+    }
+
+    .certificate-image-container img {
+        max-width: 100%;
+        max-height: 70vh;
+        object-fit: contain;
+    }
+
+    .certificate-footer {
+        padding: 10px 16px;
+
+        flex-direction: column;
+        align-items: stretch;
+
+        gap: 9px;
+    }
+
+    .certificate-footer button {
+        width: 100%;
+    }
+
+
+    /* ================= TERMINAL MODAL ================= */
+
+    .terminal-modal {
+        padding: 10px;
+    }
+
+    .terminal-window {
+        width: 100%;
+        max-width: 100%;
+        max-height: 92vh;
+
+        padding: 18px;
+    }
+
+    #terminalOutput {
+        width: 100%;
+        height: 270px;
+
+        overflow-x: auto;
+        overflow-y: auto;
+
+        font-size: 11px;
+    }
+}
+
+
+/* =========================================================
+   VERY SMALL PHONE — 420px
+   ========================================================= */
+
+@media (max-width: 420px) {
+
+    :root {
+        --mobile-padding: 15px;
+    }
+
+    .site-header {
+        padding-left: 14px;
+        padding-right: 14px;
+    }
+
+    .brand-info strong {
+        max-width: 110px;
+        font-size: 9px;
+    }
+
+    .terminal-btn {
+        padding: 7px 9px;
+        font-size: 8px;
+    }
+
+    .hero {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    .hero h1 {
+        font-size:
+                clamp(
+                        38px,
+                        12.5vw,
+                        52px
+                );
+
+        letter-spacing: -2.2px;
+    }
+
+    .hero-description {
+        font-size: 12px;
+    }
+
+    .portrait {
+        width: min(100%, 310px);
+        height: 390px;
+    }
+
+    .photo-placeholder {
+        width: 185px;
+        height: 265px;
+    }
+
+    .data-one {
+        left: 8px;
+        top: 95px;
+    }
+
+    .data-two {
+        right: 8px;
+        top: 245px;
+    }
+
+    .c-tl,
+    .c-tr {
+        top: 70px;
+    }
+
+    .c-tl,
+    .c-bl {
+        left: 30px;
+    }
+
+    .c-tr,
+    .c-br {
+        right: 30px;
+    }
+
+    .c-bl,
+    .c-br {
+        bottom: 64px;
+    }
+
+    .journey,
+    .section {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    .path-card {
+        min-height: 230px;
+        padding: 20px;
+    }
+
+    .project-art {
+        min-height: 185px;
+    }
+
+    .contact {
+        min-height: 500px;
+    }
+
+    .contact h2 {
+        font-size: 42px;
+        letter-spacing: -2.5px;
+    }
+}
+
+
+/* =========================================================
+   TOUCH DEVICE
+   ========================================================= */
+
+@media (hover: none) and (pointer: coarse) {
+
+    .btn:hover,
+    .socials a:hover,
+    .path-card:hover,
+    .project-card:hover,
+    .paper-card:hover,
+    .skill-panel:hover,
+    .cert-card:hover {
+        transform: none;
+    }
+
+}
