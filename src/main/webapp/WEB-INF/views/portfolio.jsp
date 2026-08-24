@@ -1,3 +1,4 @@
+```jsp
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 
 <!DOCTYPE html>
@@ -114,6 +115,10 @@
 
         <a href="#about">
             About
+        </a>
+
+        <a href="#education">
+            Education
         </a>
 
         <a href="#experience">
@@ -594,6 +599,110 @@
 
 
     <!-- =====================================================
+         EDUCATION
+    ====================================================== -->
+
+    <section class="section"
+             id="education">
+
+
+        <div class="section-head reveal">
+
+            <div>
+
+                <div class="kicker">
+                    EDUCATION
+                </div>
+
+                <h2>
+                    Academic background.
+                </h2>
+
+            </div>
+
+        </div>
+
+
+        <div class="education-card reveal">
+
+
+            <!-- IUBAT LOGO -->
+
+            <div class="education-logo">
+
+                <img src="${pageContext.request.contextPath}/resources/images/IUBAT.png"
+                     alt="IUBAT — International University of Business Agriculture and Technology">
+
+            </div>
+
+
+            <!-- EDUCATION CONTENT -->
+
+            <div class="education-content">
+
+                <small>
+                    BACHELOR'S DEGREE · 2026
+                </small>
+
+
+                <h3>
+                    B.Sc. in Computer Science & Engineering
+                </h3>
+
+
+                <p class="university">
+
+                    IUBAT — International University of Business
+                    Agriculture and Technology
+
+                </p>
+
+
+                <p class="education-status">
+
+                    <i class="fa-solid fa-circle-check"></i>
+
+                    Graduated: 2026
+
+                </p>
+
+
+                <div class="chips">
+
+                    <span>
+                        Computer Science
+                    </span>
+
+                    <span>
+                        Software Engineering
+                    </span>
+
+                    <span>
+                        Artificial Intelligence
+                    </span>
+
+                    <span>
+                        Research
+                    </span>
+
+                </div>
+
+            </div>
+
+
+            <!-- YEAR -->
+
+            <div class="education-year">
+                2026
+            </div>
+
+
+        </div>
+
+    </section>
+
+
+    <!-- =====================================================
          EXPERIENCE
     ====================================================== -->
 
@@ -866,6 +975,7 @@
                         <span>File Handling</span>
 
                     </div>
+
                     <a href="https://github.com/mahbub5467?tab=repositories"
                        target="_blank"
                        rel="noopener noreferrer"
@@ -875,6 +985,7 @@
                         →
 
                     </a>
+
                 </div>
 
             </article>
@@ -924,6 +1035,7 @@
                         <span>Sensors</span>
 
                     </div>
+
                     <a href="https://github.com/mahbub5467?tab=repositories"
                        target="_blank"
                        rel="noopener noreferrer"
@@ -933,6 +1045,7 @@
                         →
 
                     </a>
+
                 </div>
 
             </article>
@@ -978,6 +1091,7 @@
                         <span>IR Sensor</span>
 
                     </div>
+
                     <a href="https://github.com/mahbub5467?tab=repositories"
                        target="_blank"
                        rel="noopener noreferrer"
@@ -987,9 +1101,11 @@
                         →
 
                     </a>
+
                 </div>
 
             </article>
+
 
             <!-- SCHOOL MANAGEMENT SYSTEM -->
 
@@ -997,9 +1113,9 @@
 
                 <div class="project-art school-art">
 
-        <span class="project-label">
-            SCHOOL · MANAGEMENT
-        </span>
+                    <span class="project-label">
+                        SCHOOL · MANAGEMENT
+                    </span>
 
                     <div class="school-dashboard">
 
@@ -1038,20 +1154,22 @@
                     </h3>
 
                     <p>
+
                         A school management application designed to
                         simplify academic and administrative operations,
                         including student, teacher and school-related
                         information management.
+
                     </p>
 
 
                     <div class="chips">
 
-                        <span>full-stack web applications</span>
-                        <span> Express.jst</span>
+                        <span>Full-Stack Web Application</span>
+                        <span>Express.js</span>
                         <span>React.js</span>
                         <span>Node.js</span>
-                        <span>Mongo</span>
+                        <span>MongoDB</span>
 
                     </div>
 
@@ -1741,15 +1859,22 @@
 
             </p>
 
+
             <a
                     href="https://mail.google.com/mail/?view=cm&fs=1&to=mahbub.akashp@gmail.com&su=Portfolio%20Contact&body=Hello%20Mahbub%2C%0A%0AI%20would%20like%20to%20get%20in%20touch."
                     target="_blank"
                     rel="noopener noreferrer"
                     class="btn light big"
             >
+
                 Get in touch
-                <span>↗</span>
+
+                <span>
+                    ↗
+                </span>
+
             </a>
+
 
             <div class="socials footer-socials">
 
@@ -1955,7 +2080,6 @@
 
 
 <!-- =====================================================
-
      TERMINAL MODAL
 ===================================================== -->
 
@@ -1971,6 +2095,7 @@
     <div class="terminal-window">
 
         <!-- Close Button -->
+
         <button
                 id="closeTerminal"
                 class="terminal-close"
@@ -1982,6 +2107,7 @@
 
 
         <!-- Terminal Header -->
+
         <div class="terminal-head">
 
             <div class="terminal-title">
@@ -2002,6 +2128,7 @@
 
 
         <!-- Terminal Output -->
+
         <div
                 id="terminalOutput"
                 class="terminal-output"
@@ -2024,6 +2151,7 @@
 
 
         <!-- Terminal Input -->
+
         <div class="terminal-input">
 
             <span
@@ -2049,6 +2177,7 @@
 
 </div>
 
+
 <!-- =====================================================
      PORTFOLIO JAVASCRIPT
 ===================================================== -->
@@ -2059,3 +2188,4 @@
 </body>
 
 </html>
+```

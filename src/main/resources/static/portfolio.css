@@ -4877,3 +4877,431 @@ canvas {
     }
 
 }
+/* =====================================================
+   EDUCATION SECTION
+===================================================== */
+
+.education-card {
+    position: relative;
+    display: flex;
+    align-items: center;
+    gap: 34px;
+
+    width: 100%;
+    padding: 34px 38px;
+
+    border: 1px solid rgba(255, 255, 255, 0.10);
+    border-radius: 22px;
+
+    background:
+            linear-gradient(
+                    135deg,
+                    rgba(255, 255, 255, 0.045),
+                    rgba(255, 255, 255, 0.015)
+            );
+
+    overflow: hidden;
+
+    transition:
+            transform 0.35s ease,
+            border-color 0.35s ease,
+            background 0.35s ease,
+            box-shadow 0.35s ease;
+}
+
+
+/* Subtle glow */
+
+.education-card::before {
+    content: "";
+
+    position: absolute;
+
+    width: 260px;
+    height: 260px;
+
+    top: -140px;
+    left: -100px;
+
+    background: radial-gradient(
+            circle,
+            rgba(80, 180, 255, 0.12),
+            transparent 70%
+    );
+
+    pointer-events: none;
+}
+
+
+.education-card:hover {
+    transform: translateY(-5px);
+
+    border-color: rgba(255, 255, 255, 0.20);
+
+    background:
+            linear-gradient(
+                    135deg,
+                    rgba(255, 255, 255, 0.065),
+                    rgba(255, 255, 255, 0.02)
+            );
+
+    box-shadow:
+            0 20px 60px rgba(0, 0, 0, 0.25);
+}
+
+
+/* =====================================================
+   IUBAT LOGO
+===================================================== */
+
+.education-logo {
+    position: relative;
+
+    flex: 0 0 115px;
+
+    width: 115px;
+    height: 115px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: 16px;
+
+    border-radius: 20px;
+
+    background: rgba(255, 255, 255, 0.96);
+
+    border: 1px solid rgba(255, 255, 255, 0.18);
+
+    box-shadow:
+            0 10px 30px rgba(0, 0, 0, 0.20);
+
+    z-index: 2;
+}
+
+
+.education-logo img {
+    display: block;
+
+    width: 100%;
+    height: 100%;
+
+    object-fit: contain;
+}
+
+
+/* =====================================================
+   EDUCATION CONTENT
+===================================================== */
+
+.education-content {
+    position: relative;
+
+    flex: 1;
+
+    min-width: 0;
+
+    z-index: 2;
+}
+
+
+.education-content > small {
+    display: block;
+
+    margin-bottom: 10px;
+
+    font-family: "Space Grotesk", sans-serif;
+
+    font-size: 11px;
+    font-weight: 700;
+
+    letter-spacing: 2px;
+
+    opacity: 0.55;
+}
+
+
+.education-content h3 {
+    margin: 0 0 10px;
+
+    font-family: "Space Grotesk", sans-serif;
+
+    font-size: clamp(22px, 2.4vw, 32px);
+
+    line-height: 1.25;
+
+    font-weight: 700;
+
+    color: #ffffff;
+}
+
+
+.university {
+    margin: 0 0 12px;
+
+    max-width: 720px;
+
+    font-size: 15px;
+
+    line-height: 1.7;
+
+    color: rgba(255, 255, 255, 0.62);
+}
+
+
+.education-status {
+    display: flex;
+    align-items: center;
+
+    gap: 8px;
+
+    margin: 0 0 18px;
+
+    font-size: 13px;
+
+    color: rgba(255, 255, 255, 0.72);
+}
+
+
+.education-status i {
+    font-size: 13px;
+}
+
+
+/* =====================================================
+   EDUCATION CHIPS
+===================================================== */
+
+.education-content .chips {
+    display: flex;
+
+    flex-wrap: wrap;
+
+    gap: 8px;
+}
+
+
+.education-content .chips span {
+    display: inline-flex;
+
+    align-items: center;
+
+    min-height: 30px;
+
+    padding: 6px 12px;
+
+    border-radius: 999px;
+
+    border: 1px solid rgba(255, 255, 255, 0.10);
+
+    background: rgba(255, 255, 255, 0.035);
+
+    font-size: 11px;
+
+    color: rgba(255, 255, 255, 0.68);
+
+    white-space: nowrap;
+}
+
+
+/* =====================================================
+   YEAR
+===================================================== */
+
+.education-year {
+    position: relative;
+
+    flex: 0 0 auto;
+
+    padding-right: 5px;
+
+    font-family: "Space Grotesk", sans-serif;
+
+    font-size: clamp(45px, 5vw, 76px);
+
+    font-weight: 800;
+
+    line-height: 1;
+
+    letter-spacing: -4px;
+
+    color: rgba(255, 255, 255, 0.055);
+
+    user-select: none;
+
+    z-index: 1;
+}
+
+
+/* =====================================================
+   EDUCATION SECTION SPACING
+===================================================== */
+
+#education {
+    position: relative;
+}
+
+
+#education .section-head {
+    margin-bottom: 35px;
+}
+
+
+/* =====================================================
+   TABLET
+===================================================== */
+
+@media (max-width: 900px) {
+
+    .education-card {
+        gap: 25px;
+
+        padding: 30px;
+    }
+
+    .education-logo {
+        flex-basis: 100px;
+
+        width: 100px;
+        height: 100px;
+    }
+
+    .education-year {
+        font-size: 55px;
+    }
+
+}
+
+
+/* =====================================================
+   MOBILE
+===================================================== */
+
+@media (max-width: 768px) {
+
+    #education {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+
+    #education .section-head {
+        margin-bottom: 25px;
+    }
+
+
+    .education-card {
+        flex-direction: column;
+
+        align-items: flex-start;
+
+        gap: 22px;
+
+        padding: 25px 22px;
+
+        border-radius: 18px;
+    }
+
+
+    .education-logo {
+        flex: 0 0 auto;
+
+        width: 82px;
+        height: 82px;
+
+        padding: 12px;
+
+        border-radius: 16px;
+    }
+
+
+    .education-content {
+        width: 100%;
+    }
+
+
+    .education-content > small {
+        font-size: 9px;
+
+        letter-spacing: 1.5px;
+    }
+
+
+    .education-content h3 {
+        font-size: 22px;
+
+        line-height: 1.35;
+
+        margin-bottom: 10px;
+    }
+
+
+    .university {
+        font-size: 14px;
+
+        line-height: 1.65;
+    }
+
+
+    .education-status {
+        font-size: 12px;
+
+        margin-bottom: 16px;
+    }
+
+
+    .education-content .chips {
+        gap: 7px;
+    }
+
+
+    .education-content .chips span {
+        font-size: 10px;
+
+        padding: 5px 10px;
+    }
+
+
+    .education-year {
+        display: none;
+    }
+
+}
+
+
+/* =====================================================
+   SMALL MOBILE
+===================================================== */
+
+@media (max-width: 480px) {
+
+    #education {
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+
+
+    .education-card {
+        padding: 22px 18px;
+    }
+
+
+    .education-logo {
+        width: 72px;
+        height: 72px;
+
+        padding: 10px;
+    }
+
+
+    .education-content h3 {
+        font-size: 20px;
+    }
+
+
+    .university {
+        font-size: 13px;
+    }
+
+}
